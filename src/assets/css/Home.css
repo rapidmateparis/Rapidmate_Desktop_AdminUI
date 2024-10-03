@@ -1,0 +1,2238 @@
+:root {
+  --admin-color: #1d374e;
+  --primary-color: #ffc72b;
+  --secondary-color: #ff0058;
+  --text-color: #000;
+  --active-color: #27ae60;
+  --accepted-color: #27ae60;
+  --danger-color: #e74c3c;
+  --rejected-color: #e74c3c;
+  --pending-color: #f39c12;
+  --white-color: #fff;
+  --orange-color: #f39c12;
+  --EnterpriseBg-color: #f1f2f4;
+  --ConsumerBg-color: #ffedf3;
+  --DeliveryBg-color: #fef8ee;
+  --mediumaquamarine-color: #1abc9c;
+  --steelblue-color: #3498db;
+  --progress-color: #3498db;
+  --mediumpurple-color: #9b59b6;
+  --gradiantbg-color: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 242, 206, 1) 100%
+  );
+  --mainbg-color: #fbfaf5;
+  --sidebar-active-color: #0891b2;
+  --sidebar-color: #12263f;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/* Admin Login Start Here  */
+
+.adminLogin-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--gradiantbg-color);
+}
+
+.adminLogin-Labels {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2px !important;
+}
+
+.adminLogin-sec .password-wrapper {
+  position: relative;
+}
+
+.adminLogin-sec .password-toggle {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+}
+
+.adminLogin-sec .password-toggle:hover {
+  color: #333;
+}
+
+.adminLogin-welcomeTitle {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminLogin-subTitle {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.pickupSignup-container {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #2c303336;
+  position: relative;
+}
+
+.select-numberByCountry {
+  font-size: 14px !important;
+  width: 25% !important;
+  border: none !important;
+  border-right: 1px solid #ccc !important;
+  padding: 0px !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.signup-user-name {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.adminLogin-welcomeCard {
+  margin-bottom: 25px;
+}
+
+.adminLogin-MainCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.adminLogin-Card {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.adminLogin-button {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: var(--admin-color);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 50px;
+  width: 100%;
+  color: var(--white-color);
+}
+
+.adminLogin-eyeBtn {
+  color: var(--admin-color);
+}
+
+.adminLogin-buttonCard {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.adminLogin-ForgotPasswordText {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.adminLogin-ForgotPasswordCard {
+  text-align: end;
+  margin-top: 5px;
+}
+
+.adminLogin-alreadyAccountText {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.adminLogin-RegisterText {
+  color: var(--admin-color);
+  font-weight: 600;
+}
+
+.adminLogin-alreadyAccountCard {
+  text-align: center;
+  margin-top: 50px;
+}
+/* Side Bar Css Start Here  */
+
+.logoCard {
+  display: flex;
+  align-items: center;
+}
+
+.logoCard-CompanyName {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  margin-left: 10px;
+}
+
+.search {
+  margin: 10px 10px 0px 0px;
+}
+
+.search input {
+  width: 100% !important;
+}
+
+.sidebar {
+  background-color: var(--sidebar-color);
+}
+
+.routes .active {
+  background: var(--sidebar-active-color);
+}
+
+.link:hover {
+  background: var(--sidebar-active-color);
+}
+
+.menu:hover {
+  background: var(--sidebar-active-color);
+}
+
+.link .icon {
+  margin-top: -3px;
+}
+
+.menu .icon {
+  margin-top: -2px;
+}
+
+.top_section {
+  align-items: normal;
+  cursor: pointer;
+}
+
+main {
+  padding: 0px;
+  width: 100%;
+  background: var(--gradiantbg-color);
+}
+
+/* Admin Header Start Here  */
+
+.adminHeader-Section {
+  background-color: #fff3d3;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminHeader-Logo {
+  width: 40px;
+  height: 42px;
+  margin-right: 10px;
+}
+
+.adminHeader-LogoCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminHeader-CompanyName {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0px;
+  color: var(--admin-color);
+}
+
+.adminHeader-BellIconBtn {
+  font-size: 20px;
+  color: var(--admin-color);
+  margin-right: 15px;
+}
+
+.adminHeader-settingIconBtn {
+  font-size: 20px;
+  color: var(--admin-color);
+  margin-right: 10px;
+}
+
+.adminHeader-Section .pickupHeader-ProfileImg {
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+}
+
+.adminHeader-Section .pickupHeader-profileActionBtn {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.adminHeader-Section .pickupHeader-accountTextsActions {
+  font-size: 12px !important;
+  color: #191d16;
+}
+
+.adminHeader-Section .pickupHeader-accounts-Icons {
+  color: #969696;
+  font-size: 13px;
+  margin-right: 5px;
+}
+
+.adminHeader-ProfileCard {
+  display: flex;
+  align-items: center;
+}
+
+.manageRow {
+  --bs-gutter-x: 0px !important;
+}
+
+.adminDashboard-Section {
+  padding: 15px 25px;
+}
+
+.adminDashboard-TodayDate {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-TitleDiscription {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.adminDashboard-TodayCard {
+  border-bottom: 1px solid #c1c1c1;
+  margin-bottom: 20px;
+}
+
+.adminDashboard-OrderCards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 15px 10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 15px 8px;
+}
+
+.adminDashboard-ConsumersTexts {
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.adminDashboard-ConsumersCounts {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-ConsumersImg {
+  width: 45px;
+  height: 45px;
+}
+
+.adminDashboard-RequestArrowRightIcon {
+  font-size: 16px;
+  color: var(--admin-color);
+  margin-left: auto;
+}
+
+.adminDashboard-RequestImg {
+  width: 28px;
+  height: 28px;
+  margin-right: 15px;
+}
+
+.adminDashboard-RequestCard {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  height: 80px;
+  margin: 10px 8px;
+}
+
+.adminDashboard-RequestTitleText {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-RequestDiscriptionText {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-ManageOrderImg {
+  width: 25px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.adminDashboard-ManageOrderText {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-ManageAdsImg {
+  width: 28px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.adminDashboard-ManagePaymentImg {
+  width: 30px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.adminDashboard-ManageSchedulesImg {
+  width: 28px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.adminDashboard-SupportRequestImg {
+  width: 30px;
+  height: 29px;
+  margin-right: 15px;
+}
+
+.adminDashboard-AllRequestCards {
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid #c1c1c1;
+}
+
+/* ------- Manage Languages Section Css -------- */
+
+.adminManage-LanguagesSec {
+  padding: 15px 25px;
+}
+
+.adminManages-LanguagesTitle {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminManages-LanguagesTitleCard {
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px 0px;
+}
+
+.adminManage-LanguagesFlagsImgs {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-right: 15px;
+}
+
+.adminManage-LanguagesNameText {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.adminManage-Languagescustomswitch .form-check-input:checked {
+  background-color: var(--admin-color); /* Background color when checked */
+}
+
+.adminManage-Languagescustomswitch .form-check-input {
+  background-color: #e1e1e1;
+  border-color: #ced4da;
+}
+
+.adminManages-languageflagCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminManages-languagedetailsCard {
+  display: flex;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.adminManage-Languagescustomswitch {
+  margin-left: auto;
+}
+
+.adminManages-languageitemCard {
+  padding: 15px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.adminManages-languageAccountType {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.adminAll-usersTitleText {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminAll-usersHeadFilter {
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--admin-color);
+  border: none;
+  margin-right: 15px;
+}
+
+.adminAll-usersHeadplus {
+  background-color: var(--admin-color);
+  height: 25px;
+  width: 25px;
+  border: none;
+  border-radius: 100%;
+  color: var(--white-color);
+}
+
+.adminAll-usersHeadMainCard {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px 0px;
+}
+
+.adminAll-userssearch-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.adminAll-userssearch-bar .search-input {
+  border: none;
+  padding: 8px 10px;
+  flex: 1;
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+}
+
+.adminAll-userssearch-bar .search-button {
+  background-color: var(--admin-color);
+  border: none;
+  padding: 12px 16px;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  display: flex;
+  align-items: center;
+}
+
+.adminAll-userssearch-bar .search-button i {
+  font-size: 16px;
+}
+
+.adminAll-userssearch-bar .search-button:hover {
+  background-color: #0056b3;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+/* Style for the tab headers */
+.tab-headers {
+  display: flex;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style for each tab button */
+.tab-button {
+  flex: 1;
+  padding: 14px;
+  text-align: center;
+  background-color: #e0e0e0;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+  background-color: #ccc;
+}
+
+/* Style for the active tab button */
+.tab-button.active {
+  background-color: #ffffff;
+  border-bottom: 2px solid var(--admin-color);
+  color: var(--admin-color);
+}
+
+/* Style for the tab content area */
+.tab-content {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.adminAll-usersDetailsCard {
+  margin: 15px 0px;
+}
+
+.AllConsumer-ActionDropBtn {
+  background-color: var(--admin-color) !important;
+  border: none !important;
+}
+
+.AllConsumer-ActionDropoptions {
+  font-size: 14px !important;
+}
+
+.viewUsermodal-titleText {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.viewUser-InfoModalCard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.viewUser-InfoModalNameText {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.viewUser-InfoModalinfoText {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.viewUser-InfoModalFilesName {
+  background-color: #e4e4e4;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.viewUser-InfoModalFilesCard {
+  display: flex;
+}
+
+.viewUser-InfoModalFooterCard {
+  justify-content: center !important;
+}
+
+.viewUser-InfoModal-RemoveUserBtn {
+  background-color: transparent !important;
+  font-size: 14px !important;
+  padding: 8px 20px !important;
+  border: 1px solid var(--danger-color) !important;
+  border-radius: 8px !important;
+  color: var(--danger-color) !important;
+}
+
+.viewUser-InfoModal-UpdateUserInfoBtn {
+  background-color: var(--admin-color) !important;
+  font-size: 14px !important;
+  padding: 8px 20px !important;
+  border: 1px solid var(--admin-color) !important;
+  border-radius: 8px !important;
+  color: var(--white-color) !important;
+}
+
+.AllConsumer-actions-container {
+  display: flex;
+  align-items: center;
+}
+
+.AllConsumer-DeleteUserBtn {
+  background-color: var(--danger-color) !important;
+  font-size: 14px !important;
+  width: 35px !important;
+  height: 35px !important;
+  border: none !important;
+  border-radius: 100% !important;
+  padding: 0px !important;
+  color: var(--white-color) !important;
+  margin-right: 15px !important;
+}
+
+.AllConsumer-DownloadUserBtn {
+  background-color: var(--admin-color) !important;
+  font-size: 14px !important;
+  width: 35px !important;
+  height: 35px !important;
+  border: none !important;
+  border-radius: 100% !important;
+  padding: 0px !important;
+  color: var(--white-color) !important;
+}
+
+.AllConsumer-selectedUserText {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.AllConsumer-actions-BtnsCards {
+  margin-left: auto;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+/* Style the labels to look like radio buttons */
+.custom-radio label {
+  display: inline-block;
+  padding: 10px;
+  margin: 5px;
+  background-color: #e6e6e6;
+  border-radius: 25px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Change the background color of the selected label */
+.custom-radio input[type="radio"]:checked + label {
+  background-color: var(--admin-color);
+  border-color: var(--admin-color);
+  color: var(--white-color);
+}
+
+.custom-radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.custom-radio-group .custom-radio {
+  padding-left: 0px !important;
+}
+
+.user-image-enterprise {
+  width: 27px;
+  height: 22px;
+}
+
+.user-image-consumer {
+  width: 23px;
+  height: 25px;
+}
+
+.user-image-deliveryboy {
+  width: 17px;
+  height: 28px;
+}
+
+.adminAll-JoinRequestsCard {
+  margin-bottom: 20px;
+}
+
+.userJoinRequestHeadTitles {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.userJoinRequestTitles {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.userJoinRequestViewBtn {
+  background-color: var(--admin-color);
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+  padding: 6px 0px;
+  border-radius: 10px;
+}
+
+.userJoinRequestAccType {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.user-type-enterprise {
+  background-color: var(--EnterpriseBg-color);
+  color: var(--admin-color);
+}
+
+.user-type-consumer {
+  background-color: var(--ConsumerBg-color);
+  color: var(--secondary-color);
+}
+
+.user-type-deliveryboy {
+  background-color: var(--DeliveryBg-color);
+  color: var(--orange-color);
+}
+
+.userJoinRequestPending {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--admin-color);
+}
+
+.userJoinRequestAccepted {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--accepted-color);
+}
+
+.userJoinRequestRejected {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--rejected-color);
+}
+
+.newJoin-modalUser-HeaderCard {
+  text-align: center;
+}
+
+.modal-user-image-enterprise {
+  width: 65px;
+  height: 54px;
+}
+
+.modal-user-image-consumer {
+  width: 50px;
+  height: 53px;
+}
+
+.modal-user-image-deliveryboy {
+  width: 35px;
+  height: 53px;
+}
+
+.newJoin-modalRequestsTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0px 5px;
+}
+
+.newJoin-modalRequestsAccCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.newJoin-modalNameTopCard {
+  padding: 10px 0px 0px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.newJoin-modalLabelsText {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.newJoin-modalInputText {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.newJoin-modalNameBottomCard {
+  padding: 10px 0px;
+}
+
+.Newjoin-RequestModalFooterCard {
+  display: unset !important;
+}
+
+.Newjoin-RequestAccepetUserBtn {
+  background-color: var(--admin-color) !important;
+  font-size: 14px !important;
+  padding: 8px 20px !important;
+  width: 100%;
+  border: 1px solid var(--admin-color) !important;
+  border-radius: 8px !important;
+  color: var(--white-color) !important;
+}
+
+.Newjoin-RequestRemoveUserBtn {
+  background-color: transparent !important;
+  font-size: 14px !important;
+  padding: 8px 50px !important;
+  border: 1px solid var(--danger-color) !important;
+  border-radius: 8px !important;
+  color: var(--danger-color) !important;
+}
+
+.Newjoin-RequestIgnoreUserBtn {
+  background-color: transparent !important;
+  font-size: 14px !important;
+  padding: 8px 50px !important;
+  border: 1px solid var(--admin-color) !important;
+  border-radius: 8px !important;
+  margin-right: 20px;
+  color: var(--admin-color) !important;
+}
+
+.Newjoin-RequestBottomBtnCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px !important;
+}
+
+.vehicle-scooter {
+  width: 32px;
+  height: auto;
+}
+
+.vehicle-car {
+  width: 63px;
+  height: auto;
+}
+
+.newJoin-DeliveryUserVehicleCard {
+  margin: 10px 0px;
+}
+
+.adminUserRejectio-ReasonSubmitBtn {
+  background-color: var(--admin-color) !important;
+  font-size: 14px !important;
+  padding: 8px 50px !important;
+  border: 1px solid var(--admin-color) !important;
+  border-radius: 8px !important;
+  color: var(--white-color) !important;
+}
+
+.Newjoin-RequestRejectionFooterCard {
+  justify-content: center !important;
+}
+
+.adminAllOngoingMainCard {
+  background-color: #ffffff83;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminAllOngoing-PackageImage {
+  width: 35px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.adminAllOngoing-DateTimeText {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+.adminAllOngoing-headSecCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminAllOngoing-PriorityText {
+  font-size: 13px;
+  background-color: var(--ConsumerBg-color);
+  padding: 4px 8px;
+  font-weight: 700;
+  border-radius: 20px;
+  margin: 0px;
+  color: var(--danger-color);
+  margin-left: auto;
+}
+
+.adminAllOngoing-fromLocText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminAllOngoing-fromLocText span {
+  font-weight: 700;
+}
+
+.adminAllOngoing-fromLocCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminAllOngoing-fromLocIcon {
+  margin-right: 5px;
+  color: #7a7a7a;
+  font-size: 15px;
+}
+
+.adminAllOngoing-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 10px;
+}
+
+.adminAllOngoing-OrderiDtext {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminAllOngoing-OrderiDtext span {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.adminAllOngoing-ShiftStatusText {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  margin-left: auto;
+}
+
+.adminAllOngoing-ViewDeliveryDetail {
+  background-color: var(--admin-color);
+  color: var(--white-color);
+  padding: 7px 15px;
+  font-size: 14px;
+  border-radius: 6px;
+  margin-left: auto;
+}
+
+.adminAll-usersHeaddownloadBtn {
+  font-size: 20px;
+  background-color: transparent;
+  color: var(--admin-color);
+  border: none;
+  margin-left: auto;
+}
+
+.adminDashboard-deliveryDetailsMainCard {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminDashboard-deliveryDetailsPickupCard {
+  display: flex;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 20px;
+}
+
+.adminDashboard-deliveryDetailsPickupPackage {
+  height: 33px;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.adminDashboard-deliveryDetailsPickupText {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryDetailsCompanyName {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryDetailsAddressText {
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #888888;
+}
+
+.adminDashboard-deliveryDetailsRequesterImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.adminDashboard-deliveryDetailsRequesterCard {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 15px;
+}
+
+.adminDashboard-deliveryDetailsrequserText {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryDetailsAddressText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryRequesterText {
+  font-size: 14px;
+  font-weight: 600;
+  color: #888888;
+  margin-left: auto;
+}
+
+.adminDashboard-deliveryOrderFareText {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-color);
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryOrderFareImg {
+  width: 30px;
+  height: 26px;
+  margin-right: 10px;
+}
+
+.adminDashboard-deliveryOrderFareMaincard {
+  border-radius: 8px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 15px;
+}
+
+.adminDashboard-deliveryOrderFarePrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--admin-color);
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryDetailsTravelTimeDis {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryOrderFareTextCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.adminDashboard-deliveryOrderFareLowcard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+.adminDashboard-deliveryOrderFareLowcard p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryMasterCard {
+  display: flex;
+  margin: 5px;
+}
+
+.adminDashboard-deliveryMasterimg {
+  width: 27px;
+  height: 17px;
+  margin-right: 10px;
+}
+
+.adminDashboard-deliveryMasterCard p {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-deliveryPackageInfoText {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.adminDashboard-deliveryPackageoderText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+.adminDashboard-deliveryPackageInfoCard {
+  border-radius: 8px;
+  padding: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 15px;
+  background-color: var(--white-color);
+}
+
+.adminDashboard-ScheduleDeliveryOverviewText {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-ScheduleDeliveryStatusCount {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-ScheduleDeliveryStatustext {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-ScheduleDeliveryOverviewCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0px;
+}
+
+.adminDashboard-ScheduleDeliveryFromdate {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-ScheduleDeliveryDateTimeCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminDashboard-ScheduleDeliverySeeDeailsCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  border-radius: 0px 0px 8px 8px;
+  background-color: #1d374e1a;
+}
+
+.adminDashboard-ScheduleDeliverySeeDeailsText {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: var(--admin-color);
+}
+
+.adminDashboard-ScheduleDeliverySeeDeailsArrow {
+  color: var(--admin-color);
+}
+
+.adminDashboard-ScheduleDeliveryOverviewMainCard {
+  padding: 10px 15px;
+  background-color: var(--white-color);
+}
+
+.adminDashboard-ScheduleDeliveryOverviewShadowCard {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.adminScheduleStartDate {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminScheduleStartDateText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-right: 10px;
+}
+
+.adminScheduleStartDateCard {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.adminScheduleStartEndCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminScheduleStartDatesMainCard {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin-left: auto;
+}
+
+.adminSchedule-StartTime {
+  padding: 8px 15px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-bottom: 0px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminSchedule-StartTimeCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminSchedule-StartdateTimeMainCard {
+  padding: 10px 10px;
+  border-radius: 8px;
+  background-color: var(--white-color);
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminDashboard-scheduleRequestAcceotBtn {
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+  color: var(--white-color);
+  border-radius: 10px;
+  border: none;
+}
+
+.adminDashboard-scheduleRequestIgnoreBtn {
+  background-color: transparent;
+  padding: 8px 20px;
+  width: 48%;
+  font-size: 13px;
+  color: var(--admin-color);
+  border-radius: 10px;
+  border: 1px solid var(--admin-color);
+}
+
+.adminDashboard-scheduleRequestRejectBtn {
+  background-color: transparent;
+  padding: 8px 20px;
+  font-size: 13px;
+  width: 48%;
+  color: var(--danger-color);
+  border-radius: 10px;
+  border: 1px solid var(--danger-color);
+}
+
+.adminDashboard-scheduleRequestActionBtns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.adminDashboard-scheduleRequestActionBtnsMainCard {
+  margin-top: 25px;
+}
+
+.adminDashboard-AssigndeliveryboyMainCard {
+  padding: 20px;
+  background-color: var(--white-color);
+  border-radius: 8px;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminDashboard-AssigndeliveryboyCard {
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  height: 100px;
+  border: 1px solid transparent;
+  margin-bottom: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminDashboard-AssigndeliveryboyImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.adminDashboard-AssigndeliveryboyName {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-AssigndeliveryboyVehicles {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-AssigndeliveryboyProfileView {
+  background-color: transparent;
+  border: none;
+  color: var(--admin-color);
+  font-size: 13px;
+}
+
+.adminDashboard-AssigndeliveryboyUnavailableText {
+  background-color: #1d374e12;
+  padding: 4px 8px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--admin-color);
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.visually-hidden-radios {
+  text-align: end;
+}
+
+.adminDashboard-AssigndeliveryboySelectionCard {
+  margin-left: auto;
+}
+
+.adminDashboard-AssigndeliveryboyCard.selected {
+  border-color: #12263f45;
+}
+
+.adminDashboard-AssigndeliveryboyBtnCard button {
+  background-color: transparent;
+  border: 1px solid var(--admin-color);
+  border-radius: 8px;
+  color: var(--admin-color);
+  padding: 8px 80px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.adminDashboard-AssigndeliveryboyBtnCard {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.adminAll-vehicleHeadMainCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px 0px;
+}
+
+.adminDashboard-ManageVehicleImg {
+  width: auto;
+  height: 70px;
+  margin-right: 15px;
+}
+
+.adminDashboard-ManageVehicleCard {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  height: 85px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.adminDashboard-ManageVehicleNameCard {
+  display: flex;
+  align-items: center;
+}
+
+.adminDashboard-ManageVehicleNameText {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-ManageVehicleCapacity {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-ManageVehicleAvailable {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  background-color: #ff005812;
+  color: var(--secondary-color);
+  padding: 2px 8px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+.adminDashboard-ManageVehicleUnavailable {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  background-color: #1d374e12;
+  color: var(--admin-color);
+  padding: 2px 8px;
+  border-radius: 15px;
+  margin-left: 15px;
+}
+
+.adminDashboard-ManageVehicleEditBtn {
+  background-color: transparent;
+  border: none;
+  color: var(--admin-color);
+  font-size: 16px;
+  margin-left: auto;
+}
+
+.vehicle-cycle-img {
+  width: 52px;
+  height: 61px;
+}
+
+.vehicle-scooter-img {
+  width: 52px;
+  height: 61px;
+}
+
+.vehicle-car-img {
+  width: 70px;
+  height: 50px;
+}
+
+.vehicle-partner-img {
+  width: 85px;
+  height: 59px;
+}
+
+.vehicle-van-img {
+  width: 60px;
+  height: 40px;
+}
+
+.vehicle-pickup-img {
+  width: 60px;
+  height: 48px;
+}
+
+.vehicle-truck-img {
+  width: 80px;
+  height: 48px;
+}
+
+.vehicle-other-img {
+  width: 40px;
+  height: 40px;
+}
+
+.adminDasgboard-AddVehicleImgMainCard {
+  border: 1px dashed #ccc;
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.adminDasgboard-AddVehicleImgCard {
+  text-align: center;
+}
+
+.adminDasgboard-AddVehicleImgCamIcon {
+  width: 40px;
+  height: 36px;
+}
+
+.adminDasgboard-AddVehicleImgUploaded {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+.adminDasgboard-AddVehicleImgCard p {
+  font-size: 13px;
+  margin-top: 5px;
+  color: #cacfcf;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDasgboard-AddVehicleCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminDasgboard-AddVehicleavailableText {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDasgboard-AddVehicleavailableCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminDasgboard-AddVehicleHeaderCard {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+.adminDasgboard-AddVehicleSaveBtn {
+  background-color: var(--admin-color);
+  color: var(--white-color);
+  font-size: 13px;
+  border: none;
+  padding: 8px 80px;
+  border-radius: 8px;
+}
+
+.adminDasgboard-AddVehicleFooterCards {
+  justify-content: center !important;
+}
+
+.adminDashboard-newAdRequesttext {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-newAdRequestImg {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.adminDashboard-newAdRequestSubText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  color: var(--text-color);
+}
+
+.adminDashboard-newAdRequestMainCard {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 199, 43, 0.15) 0%,
+    rgba(255, 199, 43, 0) 100%
+  );
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  width: 400px;
+}
+
+.adminDashboard-newAdRequestArrowicon {
+  color: var(--primary-color);
+  margin-left: auto;
+}
+
+.adminAll-requestNewAdHeadCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c1c1c1;
+  padding: 20px 0px;
+}
+
+.adminDashboard-newAdsCompanyLogosImg {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+.admindashboard-newAdRequestLocDot {
+  margin-right: 8px;
+}
+
+.admindashboard-newAdRequestIndustryTypeText {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 0px;
+  margin-right: 20px;
+  color: var(--text-color);
+}
+
+.admindashboard-newAdRequestIndustryTypeCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.adminDashboard-NewAdRequestMainCard {
+  display: flex;
+  padding: 10px 15px;
+  height: 85px;
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.adminDashboard-newadRequestDetailsMainCard {
+  padding: 20px;
+  margin: 20px 0px;
+  background-color: var(--white-color);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminDashboard-newadRequestDetailsLogoCard {
+  width: 75px;
+  height: 75px;
+  padding: 5px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.adminDashboard-newadRequestDetailsLogoCard img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+}
+
+.adminDashboard-newadRequestDetailsBannerCard {
+  background-color: var(--white-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+  width: 225px;
+}
+
+.adminDashboard-newadRequestDetailsBannerCard img {
+  width: 225px;
+  height: 135px;
+}
+
+.adminDashboard-newadRequestDetailsDescriptionCard {
+  padding: 10px 10px;
+}
+
+.adminDashboard-newadRequestDetailsDescriptionCard h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.adminDashboard-newadRequestDetailsDescriptionCard p {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-newadRequestDetailsLearnMoreBtn {
+  background-color: var(--primary-color);
+  padding: 6px 35px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-color);
+  border-radius: 8px;
+}
+
+.adminDashboard-newadRequestDetailsLearnMoreBtnCard {
+  width: 100%;
+  text-align: center;
+  margin: 15px 0px;
+}
+
+.adminDashboard-newadRequestDetailsBannerLogoCard {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.adminDashboard-newadRequestDetailsCompanyNametext {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAddresstext {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdLinktext {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdLink {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyDetailsMaincards {
+  margin-top: 50px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdCancelBtn {
+  background-color: transparent;
+  color: var(--admin-color);
+  border: 2px solid var(--admin-color);
+  border-radius: 8px;
+  padding: 8px 20px;
+  width: 250px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 30px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdAcceptBtn {
+  background-color: var(--admin-color);
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  padding: 9px 20px;
+  width: 250px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdAcrtionsBtnCard {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminDashboard-LiveAdsShowDetailBtn {
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: var(--white-color);
+  font-size: 12px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdLiveText {
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #ff005812;
+  color: var(--secondary-color);
+  padding: 4px 8px;
+  border-radius: 15px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdLiveCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adminDashboard-adDetailsSpentCard {
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 30px;
+}
+
+.adminDashboard-adDetailsTotalSpendingsCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--white-color);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-top: 30px;
+}
+
+.adminDashboard-newadRequestDetailsCompanyAdRemoveBtn {
+  background-color: transparent;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  border-radius: 8px;
+  padding: 9px 20px;
+  width: 250px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-right: 50px;
+}
+
+.adminDashboardManage-PaymentMethodsMainCard {
+  background-color: var(--white-color);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.adminDashboardPayment-CardProviderLogoImg {
+  height: 17px;
+  width: auto;
+}
+
+.card-status-active {
+  color: var(--text-color);
+}
+
+.card-status-inactive {
+  color: var(--danger-color);
+}
+
+.adminDashboardPayment-MethodDetailsCard {
+  background-image: url(../images/Wallet-Bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 217px;
+  width: 390px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.adminDashboardPayment-MethodDetailsCardHolderName {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCardLogoImg {
+  height: 20px;
+  width: auto;
+}
+
+.adminDashboardPayment-MethodDetailsCardLogoNameCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.adminDashboardPayment-MethodDetailsCardNumber {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.adminDashboardPayment-MethodDetailsCardCvvCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.adminDashboardPayment-MethodDetailsCardCvvCard p {
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCarduserName {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCardUserAddress {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCardUserSubTitles {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCardMoneySpentCard {
+  padding: 15px 0px;
+}
+
+.adminDashboardPayment-MethodDetailsCardMoneySpentMianCard {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.adminDashboardPayment-MethodDetailsCardDeactivateBtn {
+  background-color: transparent;
+  border: 1px solid var(--admin-color);
+  color: var(--admin-color);
+  padding: 8px 20px;
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adminWebsiteSettings-LogoandFavIconMainCard {
+  background-color: var(--white-color);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.adminWebsiteSettings-LogoCardmain {
+  text-align: center;
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.adminWebsiteSettings-LogoSizeText {
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+.adminWebsiteSettings-LogoIconImg {
+  width: 164px;
+  height: 175px;
+}
+
+.adminWebsiteSettings-LogoImgUploadBtn{
+  background-color: var(--admin-color);
+  padding: 8px 30px;
+  border-radius: 8px;
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+}
+
+.adminWebsiteSettings-LogoImgDescriptionText{
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.adminWebsiteSettings-LogoImgDescriptionText p{
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.adminWebsiteSettings-LogoImgDescriptionText button{
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-top: 75px;
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+}
+
+.adminWebsiteSettings-SeoConfigurationUpdateBtn{
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+}
+
+.adminWebsiteSettings-GeneralSettingsPrimaryColorCard{
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+}
+
+.adminWebsiteSettings-GeneralSettingsPrimaryColorCard .form-control{
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.adminWebsiteSettings-HomeBannerSectionImg{
+  max-width: 100%;
+}
+
+.adminWebsiteSettings-HomeBannerSectionTextUpdateCard{
+  padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 8px;
+}
+
+.adminWebsiteSettings-HomeBannerSectionTextUpdateCard button{
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: var(--white-color);
+  border: none;
+  width: 100%;
+}
+
+.adminManageHome-SectionCategoryBtn{
+  background-color: var(--admin-color);
+  padding: 8px 25px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+}
+
+.adminManageHome-SectionCategoryTableHead tr th{
+  background-color: var(--admin-color);
+  color: var(--white-color);
+}
+
+.adminManageHome-SectionCategoryIconImg{
+  width: auto;
+  height: 50px;
+}
+
+.adminManageHome-SectionCategoryEditBtn{
+  background-color: var(--admin-color);
+  padding: 6px 10px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.adminManageHome-SectionCategorydeleteBtn{
+  background-color: var(--danger-color);
+  padding: 6px 10px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+}
+
+.adminManageHome-SectionCategoryUploadImgIconBtn{
+  background-color: var(--admin-color);
+  padding: 8px 20px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.adminManageHome-ServicesSectionActionsCard{
+  display: flex;
+  align-items: center;
+}
+
+.adminManageHome-ServicesSectionActionsEditBtn{
+  background-color: var(--admin-color);
+  padding: 6px 10px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.adminManageHome-ServicesSectionActionsdeleteBtn{
+  background-color: var(--danger-color);
+  padding: 6px 10px;
+  color: var(--white-color);
+  border: none;
+  border-radius: 8px;
+}
+
+.adminHome-addnewBlogActionBtnCard{
+  text-align: center;
+}
+
+.adminClientSec-ClientLogoimg{
+  width: 50px;
+  height: 50px;
+}
+
+.adminManageHome-BlogBannerIconImg{
+  width: auto;
+  height: 50px;
+}
